@@ -1,6 +1,6 @@
 # Node JS Tests
 5th homework assignment for [Pirple's NodeJS master class](https://pirple.thinkific.com/courses/the-nodejs-master-class).
-This project creates unit tests for simple two libraries: math and lang.
+This project creates unit tests for two simple libraries: math and lang.
 
 ## Features
 - [x] Tests and test runner are within /test folder, libraries are within /app folder.
