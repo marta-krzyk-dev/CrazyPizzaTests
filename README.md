@@ -26,4 +26,8 @@ Optionally, one can set DEBUG variable to print out messages in the console. (fo
 `set DEBUG=helpers & node test // Print out debug messages coming from helpers module`
 
 ## Printscreens
+# All tests passed
+![Passed tests](https://github.com/marta-krzyk-dev/NodeJSTests/blob/master/PrintScreens/all_green.png?raw=true)
 
+# One test failed, details are printed
+![Failed test](https://github.com/marta-krzyk-dev/NodeJSTests/blob/master/PrintScreens/error.png?raw=true)
