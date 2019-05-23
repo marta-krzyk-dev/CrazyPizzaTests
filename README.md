@@ -50,5 +50,5 @@ Optionally, one can set DEBUG variable to print out messages in the console. (fo
 
 |Function|Parameters|Description|
 |-------|-----------|-----------|
-|`conjugateRegularPreterite`|`verb`,`person` (one of: `yo`,`tu`,`el_ella`,`nosotros`,`vosotros`,`ellos_ellas`)| Returns a simple past form (preterite) of the verb passed in, eg. for ('cominar','tu') the result is 'caminaste'. If the verb is not in infinitive form (ends with -ar,-er,-ir), a custom `VerbNotInfinitiveError` is thrown. If verb is not a valid string, a custom `LangError` is thrown.|
-|`getOrdinalNumber`|`number`, `noun`| Returns an ordinal number as a string in Spanish and the noun passed. Eg. for (4,'gato') result is 'el cuatro gato'; for (10,'sandía') the result is 'la décima sandía'. If the arguments are not number and noun respectively, a custom `LangError` is thrown.|
+|`conjugateRegularPreterite`|`verb`,`person` (one of: `yo`, `tu`, `el_ella`, `nosotros`, `vosotros`, `ellos_ellas`)| Returns a simple past form (preterite) of the verb passed in, eg. for ('cominar','tu') the result is 'caminaste'. If the verb is not in infinitive form (ends with -ar,-er,-ir), a custom `VerbNotInfinitiveError` is thrown. If verb is not a valid string, a custom `LangError` is thrown.|
+|`getOrdinalNumber`|`number`, `noun`| Returns an ordinal number as a string in Spanish and the noun passed. Eg. for (4,'gato') result is 'cuatro gato'; for (10,'sandía') the result is 'décima sandía'. If the arguments are not number and noun respectively, a custom `LangError` is thrown.|
