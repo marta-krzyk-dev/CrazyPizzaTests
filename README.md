@@ -42,12 +42,13 @@ Optionally, one can set DEBUG variable to print out messages in the console. (fo
 
 ## Libraries
 
+### Math library
 |Function|Parameters|Description|
 |-------|-----------|-----------|
 |`findDivisors`|`number`| Returns an array of 2 greatest divisors for a given number. If number is invalid, `TypeError` is thrown. If number is 1, array of 1 value is returned.|
 |`getANumber`|`min`, `max`| Returns a random number between min and max. If `min` is invalid, it is set to 1. If `max` is invalid, it is set to 10. If `min` is greater than `max`, then they are set to 1 and 10 respectively.|
 
-
+### Lang library
 |Function|Parameters|Description|
 |-------|-----------|-----------|
 |`conjugateRegularPreterite`|`verb`,`person` (one of: `yo`, `tu`, `el_ella`, `nosotros`, `vosotros`, `ellos_ellas`)| Returns a simple past form (preterite) of the verb passed in, eg. for ('cominar','tu') the result is 'caminaste'. If the verb is not in infinitive form (ends with -ar,-er,-ir), a custom `VerbNotInfinitiveError` is thrown. If verb is not a valid string, a custom `LangError` is thrown.|
