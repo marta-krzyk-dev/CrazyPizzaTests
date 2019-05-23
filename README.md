@@ -2,8 +2,6 @@
 5th homework assignment for [Pirple's NodeJS master class](https://pirple.thinkific.com/courses/the-nodejs-master-class).
 This project creates unit tests for simple two libraries: math and lang.
 
-![Logo](https://github.com/marta-krzyk-dev/CrazyPizzaAPI/blob/master/logo_small.jpg?raw=true)
-
 ## Features
 - [x] Tests and test runner are within /test folder, libraries are within /app folder.
 - [x] lang and math libraries both contain simple functions.
