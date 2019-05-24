@@ -53,7 +53,7 @@ Optionally, one can set DEBUG variable to print out messages in the console. (fo
 |-------|-----------|-----------|
 |`math.findDivisors returns [5,6] for 30`|30|[5,6]|
 |`math.findDivisors returns [1] for 1`|1|[1]|
-|`math.findDivisors throws exception for a non-number`|'cat'|TypeError|
+|`math.findDivisors throws exception for a non-number`|'cat'|`TypeError`|
 |`math.getANumber returns a random number between -100 and 100`|-100,100|a number between -100 and 100|
 |`math.getANumber works when min > max`|1000, 1|a number|
 |`math.getANumber does not throw exception for a non-number`|'cat', null|a number|
@@ -68,9 +68,9 @@ Optionally, one can set DEBUG variable to print out messages in the console. (fo
 |Test name|Function parameters|Expected function output|
 |-------|-----------|-----------|
 |`lang.conjugateRegularPreterite should conjugate correctly`|'beber', 'el_ella'|'bebió'|
-|`lang.conjugateRegularPreterite throws VerbNotInfinitiveError if verb is not an infinitive`|'xxx', 'yo'|throws VerbNotInfinitiveError|
+|`lang.conjugateRegularPreterite throws VerbNotInfinitiveError if verb is not an infinitive`|'xxx', 'yo'|`VerbNotInfinitiveError`|
 |`lang.conjugateRegularPreterite should return yo form if person argument is incorrect`|'cantar', 'not_existing_personal_pronoun'|'canté'|
 |`lang.conjugateRegularPreterite should return yo form if person argument is missing`|'cantar'|'canté'|
-|`lang.conjugateRegularPreterite throws LangError if arguments are of incorrect types`|123, 123|throws LangError|
+|`lang.conjugateRegularPreterite throws LangError if arguments are of incorrect types`|123, 123|`LangError`|
 |`lang.getOrdinalNumber works for singular nouns`|2, 'manzana'|'segunda manzana'|
 |`lang.getOrdinalNumber works for plural nouns`|10, 'aniversarios'|'décimos aniversarios'|
