@@ -5,7 +5,7 @@ This project creates unit tests for two simple libraries: math and lang.
 ## Features
 - [x] Tests and test runner are within /test folder, libraries are within /app folder.
 - [x] lang and math libraries both contain simple functions.
-- [x] Tests are contained in test/lang_unit.js and test/math_unit.js. They check if the llibrary functions return the correct values, that they throw or do not throw errors depending on the parameters passed in.
+- [x] Tests are contained in test/lang_unit.js and test/math_unit.js. They check if the library functions return the correct values, that they throw or do not throw errors depending on the parameters passed in.
 
 ## Screencast
 
