@@ -48,6 +48,16 @@ Optionally, one can set DEBUG variable to print out messages in the console. (fo
 |`findDivisors`|`number`| Returns an array of 2 greatest divisors for a given number. If number is invalid, `TypeError` is thrown. If number is 1, array [1] is returned.|
 |`getANumber`|`min`, `max`| Returns a random number between min and max. If `min` is invalid, it is set to 1. If `max` is invalid, it is set to 10. If `min` is greater than `max`, then they are set to 1 and 10 respectively.|
 
+### Unit tests
+|Test name|Function parameters|Expected function output|
+|-------|-----------|-----------|
+|`math.findDivisors returns [5,6] for 30`|30|[5,6]|
+|`math.findDivisors returns [1] for 1`|1|[1]|
+|`math.findDivisors throws exception for a non-number`|'cat'|TypeError|
+|`math.getANumber returns a random number between -100 and 100`|-100,100|a number between -100 and 100|
+|`math.getANumber works when min > max`|1000, 1|a number|
+|`math.getANumber does not throw exception for a non-number`|'cat', null|a number|
+
 ### Lang library
 |Function|Parameters|Description|
 |-------|-----------|-----------|
@@ -55,7 +65,7 @@ Optionally, one can set DEBUG variable to print out messages in the console. (fo
 |`getOrdinalNumber`|`number`, `noun`| Returns an ordinal number as a string in Spanish and the noun passed. Eg. for (4,'gato') result is 'cuatro gato'; for (10,'sandía') the result is 'décima sandía'. If the arguments are not number and noun respectively, a custom `LangError` is thrown.|
 
 ### Unit tests
-|Test name|Parameters|Expected function output|
+|Test name|Function parameters|Expected function output|
 |-------|-----------|-----------|
 |`lang.conjugateRegularPreterite should conjugate correctly`|'beber', 'el_ella'|'bebió'|
 |`lang.conjugateRegularPreterite throws VerbNotInfinitiveError if verb is not an infinitive`|'xxx', 'yo'|throws VerbNotInfinitiveError|
