@@ -53,3 +53,14 @@ Optionally, one can set DEBUG variable to print out messages in the console. (fo
 |-------|-----------|-----------|
 |`conjugateRegularPreterite`|`verb`,`person`| Returns a simple past form (preterite) of the verb passed in, eg. for ('cominar','tu') the result is 'caminaste'. If the verb is not in infinitive form (ends with -ar,-er,-ir), a custom `VerbNotInfinitiveError` is thrown. If verb is not a valid string, a custom `LangError` is thrown. `person` argument must be one of: `yo`, `tu`, `el_ella`, `nosotros`, `vosotros`, `ellos_ellas`, otherwise `yo` form is returned.
 |`getOrdinalNumber`|`number`, `noun`| Returns an ordinal number as a string in Spanish and the noun passed. Eg. for (4,'gato') result is 'cuatro gato'; for (10,'sandía') the result is 'décima sandía'. If the arguments are not number and noun respectively, a custom `LangError` is thrown.|
+
+### Unit tests
+|Test name|Parameters|Expected function output|
+|-------|-----------|-----------|
+|`lang.conjugateRegularPreterite should conjugate correctly`|'beber', 'el_ella'|'bebió'|
+|`lang.conjugateRegularPreterite throws VerbNotInfinitiveError if verb is not an infinitive`|'xxx', 'yo'|throws VerbNotInfinitiveError|
+|`lang.conjugateRegularPreterite should return yo form if person argument is incorrect`|'cantar', 'not_existing_personal_pronoun'|'canté'|
+|`lang.conjugateRegularPreterite should return yo form if person argument is missing`|'cantar'|'canté'|
+|`lang.conjugateRegularPreterite throws LangError if arguments are of incorrect types`|123, 123|throws LangError|
+|`lang.getOrdinalNumber works for singular nouns`|2, 'manzana'|'segunda manzana'|
+|`lang.getOrdinalNumber works for plural nouns`|10, 'aniversarios'|'décimos aniversarios'|
